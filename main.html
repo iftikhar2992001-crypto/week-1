@@ -1,0 +1,208 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header>
+        <span> <img src="assets/logo-colored.svg" alt=""></span>
+        <div class="search_bar">
+            <input type="text" placeholder="search">
+            <select name="All category" id="category" aria-placeholder="All category">
+                <option value="kids">kids</option>
+                <option value="Mens">Mens</option>
+                <option value="Women">Women</option>
+                <option value="Electronics">Electronics</option>
+            </select>
+            <button type="submit">Search</button>
+        </div>
+        <div class="icons">
+            <div class="profile_icon">
+                <a href=""><img src="assets/profile.svg" alt="">
+                    <span class="icon_text">
+                        <p>Profile</p>
+                    </span></a>
+            </div>
+            <div class="message_icon"> <a href=""><img src="assets/message.svg" alt="">
+                    <span class="icon_text">
+                        <p>Message</p>
+                    </span></a>
+            </div>
+            <div class="heart_icon"><a href=""><img src="assets/heart.svg" alt="">
+                    <span class="icon_text">
+                        <p>Order</p>
+                    </span></a>
+            </div>
+            <div class="cart_icon"><a href=""><img src="assets/cart.svg" alt="">
+                    <span class="icon_text">
+                        <p>Cart</p>
+                    </span></a>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="category">
+            <span class="burger_menu"><img src="assets/burger-menu-svgrepo-com.svg" alt=""></span>
+            <a href="">All Category</a>
+            <a href="">Hot offers</a>
+            <a href="">Gift boxes</a>
+            <a href="">projects</a>
+            <a href="">Menu item</a>
+            <select name="" id="">
+                <option value="">Help</option>
+                <option value="">contact</option>
+                <option value="">Report</option>
+            </select>
+        </div>
+        <div class="shipping_lang">
+            <div class="language">
+                <select name="language" id="">
+                    <option value="">English,USD</option>
+                    <option value="">German</option>
+                    <option value="">Urdu</option>
+                </select>
+            </div>
+            <div class="ship-to-container">
+                <span class="label-text">Ship to</span>
+                <div class="custom-dropdown" id="countryDropdown">
+
+                    <div class="selected-option" onclick="toggleDropdown()">
+                        <img src="assets/AE@2x.png" alt="UAE" id="selectedFlag" class="flag-icon">
+                        <span class="arrow">▼</span>
+                    </div>
+
+                    <ul class="dropdown-options" id="dropdownOptions">
+                        <li onclick="selectCountry('assets/AE@2x.png', 'Germany')">
+                            <img src="assets/AE@2x.png" class="flag-icon"> UAE
+                        </li>
+                        <li onclick="selectCountry('assets/CN@2x.png', 'USA')">
+                            <img src="assets/CN@2x.png" class="flag-icon"> China
+                        </li>
+                        <li onclick="selectCountry('assets/FR@2x.png', 'France')">
+                            <img src="assets/FR@2x.png" class="flag-icon"> France
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+
+
+        </div>
+    </nav>
+    <footer>
+        <div class="subscribe">
+            <div class="subscribe_email">
+                <div class="newsletter">
+                    <p class="heading">Subscribe on our newsletter</p>
+                </div>
+                <div class="subscribe_text">
+                    <p>get daily news on upcoming offers from many supplier all over the world</p>
+                </div>
+                <div class="email">
+                    <input type="text" placeholder="✉️ Email">
+                    <button class="subscribe_btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="brand">
+                <span class="logo"><img src="assets/logo-colored.svg" alt=""></span>
+                <p>The detail information about the company check out our social media pages</p>
+                <div class="social_icons">
+                    <a href=""><span><img src="assets/facebook.svg" alt=""></span></a>
+                    <a href=""><span><img src="assets/twitter.svg" alt=""></span></a>
+                    <a href=""><span><img src="assets/linkedin.svg" alt=""></span></a>
+                    <a href=""><span><img src="assets/instagram.svg" alt=""></span></a>
+                    <a href=""><span><img src="assets/youtube.svg" alt=""></span></a>
+                </div>
+            </div>
+            <div class="about_us">
+                <h4 class="heading">About</h4>
+                <ul>
+                    <li>About us</li>
+                    <li>Find store</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="about_us">
+                <h4 class="heading">Partnership</h4>
+                <ul>
+                    <li>About us</li>
+                    <li>Find store</li>
+                    <li>Categories</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class="about_us">
+                <h4 class="heading">information</h4>
+                <ul>
+                    <li>Help center</li>
+                    <li>Money refund</li>
+                    <li>Shipping</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+            <div class="about_us">
+                <h4 class="heading">For users</h4>
+                <ul>
+                    <li>Login</li>
+                    <li>Register</li>
+                    <li>Settings</li>
+                    <li>My Orders</li>
+                </ul>
+            </div>
+            <div class="get_app">
+                <h4 class="heading">Get app</h4>
+                <span><img src="assets/Group.png" alt=""></span>
+                <br>
+                <span><img src="assets/market-button.png" alt=""></span>
+            </div>
+        </div>
+        <div class="end_of_page">
+            <div>
+                <p>© 2025 Ecommerce</p>
+            </div>
+            <div class="last_text">
+                <p>English</p>
+                <span><img src="assets/GB@2x.png" alt=""></span>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    // 1. Function to toggle the menu open/close
+    function toggleDropdown() {
+        document.getElementById("dropdownOptions").classList.toggle("show");
+    }
+
+    // 2. Function to update the selected flag when an item is clicked
+    function selectCountry(imageSource, countryName) {
+        // Update the main image
+        document.getElementById("selectedFlag").src = imageSource;
+        document.getElementById("selectedFlag").alt = countryName;
+
+        // Close the menu
+        document.getElementById("dropdownOptions").classList.remove("show");
+    }
+
+    // 3. Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.closest('.custom-dropdown')) {
+            var dropdowns = document.getElementsByClassName("dropdown-options");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</html>
